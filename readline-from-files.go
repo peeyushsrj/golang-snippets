@@ -1,4 +1,5 @@
-func LinesFromFile(path string) ([]string, error) {
+// ReadLines from file & return array of strings in lines (without \n)
+func ReadLinesFromFile(path string) ([]string, error) {
 	var arr []string
 
 	file, err := os.OpenFile(path, os.O_RDONLY|os.O_CREATE, 0666)

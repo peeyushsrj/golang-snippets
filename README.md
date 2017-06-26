@@ -1,3 +1,4 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/peeyushsrj/golang-snippets)](https://goreportcard.com/report/github.com/peeyushsrj/golang-snippets)
 # golang-snippets
 
 Useful snippets/functions for Go

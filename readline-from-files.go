@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-// ReadLines from file & return array of strings in lines (without \n)
+//ReadLinesFromFile takes filepath as argument & return array of strings line by line (without '\n')
 func ReadLinesFromFile(path string) ([]string, error) {
 	var arr []string
 

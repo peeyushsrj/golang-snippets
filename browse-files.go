@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-//Browse files of type x (e.g. `.mp3`) from root directory path, which returns array of file paths and error if exist.
+//BrowseXFiles take file type i.e. `.mp3` & directory as input and return array of filepaths and error.
 func BrowseXFiles(x string, root string) ([]string, error) {
 	var arr []string
 	err := filepath.Walk(root, func(path string, f os.FileInfo, err error) error {

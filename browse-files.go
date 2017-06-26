@@ -1,3 +1,11 @@
+package golangSnippets
+
+import (
+	"os"
+	"path/filepath"
+	"strings"
+)
+
 //Browse files of type x (e.g. `.mp3`) from root directory path, which returns array of file paths and error if exist.
 func BrowseXFiles(x string, root string) ([]string, error) {
 	var arr []string

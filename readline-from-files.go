@@ -1,3 +1,10 @@
+package golangSnippets
+
+import (
+	"bufio"
+	"os"
+)
+
 // ReadLines from file & return array of strings in lines (without \n)
 func ReadLinesFromFile(path string) ([]string, error) {
 	var arr []string

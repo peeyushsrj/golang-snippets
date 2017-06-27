@@ -1,4 +1,6 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/peeyushsrj/golang-snippets)](https://goreportcard.com/report/github.com/peeyushsrj/golang-snippets)
+![Build Status](https://circleci.com/gh/peeyushsrj/golang-snippets.png?style=shield)
+
 # golang-snippets
 
 Useful snippets/functions for Go

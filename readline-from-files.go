@@ -3,6 +3,7 @@ package golangSnippets
 import (
 	"bufio"
 	"os"
+	"strings"
 )
 
 //ReadLinesFromFile takes filepath as argument & return array of strings line by line (without '\n')

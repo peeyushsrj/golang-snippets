@@ -2,7 +2,6 @@ package golangSnippets
 
 import (
 	"io/ioutil"
-	"log"
 	"strings"
 )
 

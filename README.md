@@ -10,3 +10,4 @@ Useful snippets/functions for Go
 - [List files in a directory](https://github.com/peeyushsrj/golang-snippets/blob/master/browse-files.go)
 - [Check if string exist in array of strings](https://github.com/peeyushsrj/golang-snippets/blob/master/string-in-slice.go)
 - [Filename from url](https://github.com/peeyushsrj/golang-snippets/blob/master/filename-from-url.go)
+- [Append To File](https://github.com/peeyushsrj/golang-snippets/blob/master/append-text-to-file.go)

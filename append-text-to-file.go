@@ -5,19 +5,21 @@ import (
 	"strings"
 )
 
-//AppendToFile appends data to filepath named file
+//AppendStringToFile appends strData to filepath
 //If unique is true then unique values will be inserted in file
-func AppendToFile(data interface{}, filepath string, unique bool) {
-	fi, _ := os.OpenFile("junk.txt", os.O_RDWR|os.O_APPEND, 0666)
-	defer fi.Close()
+func AppendStringToFile(strData string, filepath string, unique bool) {
+	file, _ := os.OpenFile("junk.txt", os.O_RDWR|os.O_APPEND, 0666)
+	defer file.Close()
 	b := make([]byte, 1000) //this can be efficient
 	file.Read(b)
 	//Appending Unique
-	if uniqueFlag == true {
-		if !strings.Contains(string(b), data) {
-			file.WriteString(data + "\n")
+	if unique == true {
+		if !strings.Contains(string(b), strData) {
+			file.WriteString(strData + "\n")
 		}
 	} else {
-		file.WriteString(data + "\n")
+		file.WriteString(strData + "\n")
 	}
 }
+
+//Int & Json data later

@@ -1,15 +1,14 @@
 package golangSnippets
 
-import (
-	"strings"
-)
+import "strings"
 
-//stringInSlice finds a string inside an array of strings
-func stringInSlice(a string, b []string) bool {
+//stringInSlice finds a string inside an array of strings, 
+//if found return the string else return empty string
+func stringInSlice(a string, b []string) string {
 	for _, el := range b {
 		if strings.Contains(a, el) {
-			return true
+			return el
 		}
 	}
-	return false
+	return ""
 }

@@ -22,7 +22,11 @@ Some useful function in go, now as a package.
 
 ## How to use
 
-`go get -u github.com/peeyushsrj/golang-snippets`
+For a subpackage, do `go get -u $subpackage`, as:
+
+```
+go get -u github.com/peeyushsrj/golang-snippets/http
+```
 
 ### Example
 

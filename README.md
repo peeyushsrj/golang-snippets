@@ -28,7 +28,7 @@ go get -u github.com/peeyushsrj/golang-snippets/...
 
 ### Example
 
-```
+```golang
 package main
 
 import (
@@ -50,7 +50,7 @@ func main() {
 		if err != nil {
 			log.Fatal(1)
 		}
-    fmt.Println(fileNames)
+    		fmt.Println(fileNames)
 	} else {
 		fmt.Println("The input path doesn't exist.")
 	}

@@ -3,7 +3,7 @@
 
 # golang-snippets
 
-Some useful function in go, now as a package.
+Useful Snippets functions, not in standard library, but sake of use.
 
 ## Subpackages
 
@@ -20,14 +20,39 @@ Some useful function in go, now as a package.
 - [Anonymous visit website via socks5 client](https://github.com/peeyushsrj/golang-snippets/blob/master/http/append-text-to-file.go)
 
 
-## How to use
-
-For a subpackage, do `go get -u $subpackage`, as:
+## Install
 
 ```
-go get -u github.com/peeyushsrj/golang-snippets/http
+go get -u github.com/peeyushsrj/golang-snippets/...
 ```
 
 ### Example
 
-Soon!
+```
+package main
+
+import (
+	"fmt"
+	"log"
+	"os"
+	files "github.com/peeyushsrj/golang-snippets/files"
+)
+
+func main() {
+	if len(os.Args) < 2 {
+		fmt.Println("Please specify the directory")
+		fmt.Println("Usage: [path]\n")
+		return
+	}
+	basePath := os.Args[1]
+	if _, err := os.Stat(basePath); err == nil {
+		fileNames, err := files.BrowseXFiles(".md", basePath)
+		if err != nil {
+			log.Fatal(1)
+		}
+    fmt.Println(fileNames)
+	} else {
+		fmt.Println("The input path doesn't exist.")
+	}
+}
+```

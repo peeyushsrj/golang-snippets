@@ -3,7 +3,7 @@
 
 # golang-snippets
 
-Useful Snippets functions, not in standard library, but sake of use.
+Some useful functions.
 
 ## Subpackages
 

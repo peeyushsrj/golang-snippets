@@ -17,7 +17,7 @@ Some useful functions.
 
 ### http
 
-- [Anonymous visit website via socks5 client](https://github.com/peeyushsrj/golang-snippets/blob/master/http/append-text-to-file.go)
+- [Anonymous visit website via socks5 client](https://github.com/peeyushsrj/golang-snippets/blob/master/http/append-text-to-file.go) (Pre-requisite: tor must be installed)
 
 
 ## Install
